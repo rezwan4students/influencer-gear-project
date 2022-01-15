@@ -1,3 +1,160 @@
-h2 {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Lobster&family=Roboto,wght@1,100&display=swap');
+
+header,main{
+    margin: 5px 80px;
+   
+}
+
+body{
+    background-color: rgb(245, 249, 252);
+}
+.nav-title {
+    /* font-family: 'Be Vietnam Pro', sans-serif; */    
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lobster', cursive;
+    font-size: 16px;
+    
+}
+
+.header-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family:'Lobster', cursive;
+}
+
+.header-left {
+    /* width: 50%; */
+}
+
+.header-right {
+    /* width: 50%; */
+    
+    margin-top: 10px;
+}
+
+.header-right img:hover{
+    
+        transform: rotate(60deg);
+        transition: transform linear 2s;
+    
+}
+
+.btn-style {
+    text-decoration: none;
+    background-image: linear-gradient(orange, tomato);
+    padding: 8px 25px;
+    color: white;
+    border-radius: 15px;
+}
+
+.btn-style:hover{
+    transform: scale(2);
+    transition: transform linear 2s;
+    border: 2px solid rgb(82, 32, 3);
+}
+
+.ruller{
+    
+    border-top: 2px solid orange;    
+}
+
+#collection-title {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+.collection-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 280px 280px 280px;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    
+}
+
+.grey{
+    color:grey;
+}
+
+.rating{
+    display:flex;
+    
+}
+
+.rating img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.collection {
+  
+    padding: 15px;
+    border-radius: 6px;
+    background-color: white;
+    
+}
+
+.collection-image {
+    width: 250px;
+    height: 200px;
+}
+
+.collection-image:hover{
+    transform: scale(1.1);
+    transition: transform linear 1s;
+    border: 3px dashed orange;
+}
+
+#more {
+    margin-right: 95px;
+    font-family: 'Lobster', cursive;
+    text-align:right;
+    color: orange
+}
+
+#more-orange{
+    text-decoration: none;
+    color:orange;
+}
+
+.footer{
+    background-color: orange;
+    color:white;
+    text-align: center;
+    width:100% ;
+}
+
+
+
+
+/*********************************
+Media Queries for Mobile Phones:
+**********************************/
+
+@media only screen and (max-width: 688px) {
+
+    .header-container{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+
+    .collection-container {
+        grid-template-columns: 280px;
+    }
+
+}
+
+
+/*****************************
+Media Queries for TABs:
+******************************/
+
+@media only screen and (max-width: 992px) and (min-width:689px)  {
+    
+    .collection-container{
+        grid-template-columns: 280px 280px;
+    }
+
 }
